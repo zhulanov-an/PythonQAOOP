@@ -1,6 +1,6 @@
-from square import Square
+from shape import Shape
 
 
-class Rectangle(Square):
+class Rectangle(Shape):
     def __init__(self, area, perimeter):
-        super().__init__(area=area, perimeter=perimeter, name="Rectangle")
+        super().__init__(name="Rectangle", area=area, angles=4, perimeter=perimeter)
