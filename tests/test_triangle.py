@@ -1,6 +1,5 @@
 import pytest
 from triangle import Triangle
-from square import Square
 from shape import Shape
 
 
