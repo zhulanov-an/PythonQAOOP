@@ -6,7 +6,7 @@ from shape import Shape
 
 def test_triangle_angles_equals_three():
     triangle = Triangle(10, 6)
-    assert triangle.get_angles() == 3
+    assert triangle.angles == 3
 
 
 def test_triangles_equals_area_after_add_area():
@@ -23,7 +23,7 @@ def test_error_if_not_figure():
 
 def test_name_triangle():
     triangle = Triangle(4, 2)
-    assert triangle.get_name() == "Triangle"
+    assert triangle.name == "Triangle"
 
 
 def test_triangle_is_instance_figure():

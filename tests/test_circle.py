@@ -5,7 +5,7 @@ from shape import Shape
 
 def test_circle_angles_equals_zero():
     circle_1 = Circle(10)
-    assert circle_1.get_angles() == 0
+    assert circle_1.angles == 0
 
 
 def test_circles_equals_area_after_add_area():
@@ -23,7 +23,7 @@ def test_error_if_not_figure(item):
 
 def test_name_circle():
     circle_1 = Circle(1)
-    assert circle_1.get_name() == "Circle"
+    assert circle_1.name == "Circle"
 
 
 def test_circle_is_instance_figure():

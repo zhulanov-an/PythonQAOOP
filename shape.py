@@ -1,20 +1,23 @@
 class Shape():
     def __init__(self, name, area, angles, perimeter):
-        self._name = name
-        self._area = area
-        self._angles = angles
-        self._perimeter = perimeter
+        self.__name = name
+        self.__area = area
+        self.__angles = angles
+        self.__perimeter = perimeter
 
-    def get_area(self):
-        return self._area
+    @property
+    def area(self):
+        return self.__area
 
     def add_area(self, other_figure):
         if not isinstance(other_figure, Shape):
             raise Exception("not a figure")
-        return self.get_area() + other_figure.get_area()
+        return self.area + other_figure.area
 
-    def get_angles(self):
-        return self._angles
+    @property
+    def angles(self):
+        return self.__angles
 
-    def get_name(self):
-        return self._name
+    @property
+    def name(self):
+        return self.__name

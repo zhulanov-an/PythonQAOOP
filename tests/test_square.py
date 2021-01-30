@@ -6,7 +6,7 @@ from shape import Shape
 
 def test_square_angles_equals_four():
     rectangle = Square(10, 6)
-    assert rectangle.get_angles() == 4
+    assert rectangle.angles == 4
 
 
 def test_squares_equals_area_after_add_area():
@@ -23,7 +23,7 @@ def test_error_if_not_figure():
 
 def test_name_square():
     rectangle = Square(4, 2)
-    assert rectangle.get_name() == "Square"
+    assert rectangle.name == "Square"
 
 
 def test_square_is_instance_figure():
